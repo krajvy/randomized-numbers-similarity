@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Test similarity of randomized numbers</title>
+		<meta name="description" content="Test similarity of randomized numbers">
+		<meta name="author" content="Jan 'krajvy' Krivohlavek">
+		<script src="./randomized.js"></script>
+    <link href="./style.css" rel="stylesheet">
+	</head>
+	<body>
+    <h1>Test similarity of randomized numbers</h1>
+    <div id="data_out"></div>
+    <script>
+    (function() {
+      var random = new Randomized();
+			// 50 = random maximum value, length of an array, x coordinates
+			// 1000 = number of cycles when values are filling array, y coordinates
+			// 2 = how many times should be filled one row with random numbers, colourfulness
+      random.fillRandomTable(50, 1000, 2);
+      random.printFilledTable('data_out');
+    })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+
+table th, table td {
+  border: 1px solid black;
+  text-align: right;
+  overflow: hidden;
+}
+
+table th {
+  background-color: silver;
+}
